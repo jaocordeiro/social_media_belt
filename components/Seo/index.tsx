@@ -1,11 +1,17 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
-const Seo = () => {
+type Props = {
+  title: string;
+  description?: string;
+};
+
+const Seo = ({ title, description }: Props) => {
   return (
     <Head>
-      <title>Cabeçalho do App</title>
+      <title>{title}</title>
+      {description && <meta name='description' content={description} />}
     </Head>
-  )
-}
+  );
+};
 
 export default Seo;

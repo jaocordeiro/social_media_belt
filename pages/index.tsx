@@ -5,7 +5,7 @@ import Seo from '@/components/Seo';
 export default function Home() {
   return (
     <div className='text-3xl font-bold underline'>
-      <Seo />
+      <Seo title={'Social Media Belt'} description={'Social Media Belt'} />
       <ul>
         <li>
           <Link href='/app'>
